@@ -30,4 +30,7 @@ npm run dev
 ### 5. Open LocalHost:
 In the terminal click the 'localhost' link to view the app in the browser.
 
+### Using Orbit Controls:
+User can zoom in/out and rotate 3D objects.
+
 Enjoy!

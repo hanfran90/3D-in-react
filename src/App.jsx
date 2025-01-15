@@ -3,6 +3,7 @@ import { Canvas } from "@react-three/fiber";
 import BoxGeometry from "./Components/BoxGeomtery";
 import SpinningCube from "./Components/SpinningCube";
 import InteractiveCube from "./Components/InteractiveCube";
+import { OrbitControls } from "@react-three/drei";
 
 const App = () => (
   <Canvas camera={{ position: [10, 10, 10] }}>
@@ -11,6 +12,7 @@ const App = () => (
     <BoxGeometry />
     <SpinningCube />
     <InteractiveCube />
+    <OrbitControls />
   </Canvas>
 );
 
