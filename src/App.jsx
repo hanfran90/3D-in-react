@@ -1,14 +1,14 @@
 import React from "react";
 import { Canvas } from "@react-three/fiber";
+import BoxGeometry from "./Components/BoxGeomtery";
+import SpinningCube from "./Components/SpinningCube";
 
 const App = () => (
-  <Canvas camera={{ position: [5, 5, 5] }}>
-    <ambientLight intensity={3.0} />
+  <Canvas camera={{ position: [4, 4, 4] }}>
+    <ambientLight intensity={1.2} />
     <pointLight position={[10, 10, 10]} />
-    <mesh>
-      <boxGeometry args={[5, 5, 5]} />
-      <meshStandardMaterial color="red" />
-    </mesh>
+    <BoxGeometry />
+    <SpinningCube />
   </Canvas>
 );
 
