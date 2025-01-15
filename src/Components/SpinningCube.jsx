@@ -13,8 +13,8 @@ const SpinningCube = () => {
   });
 
   return (
-    <mesh ref={cubeRef} position={[4, 1, -3]}>
-      <boxGeometry args={[2.5, 2.5, 2.5]} />
+    <mesh ref={cubeRef} position={[0, 0, 0]}>
+      <boxGeometry args={[5, 5, 5]} />
       <meshStandardMaterial color="blue" />
     </mesh>
   );

@@ -2,8 +2,8 @@ import React from "react";
 
 const BoxGeometry = () => {
   return (
-    <mesh position={[0, 0, 0]}>
-      <boxGeometry args={[3, 3, 3]} />
+    <mesh position={[-10, 0, 0]}>
+      <boxGeometry args={[5, 5, 5]} />
       <meshStandardMaterial color="red" />
     </mesh>
   );
