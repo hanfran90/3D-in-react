@@ -4,7 +4,8 @@ const NavBar = () => {
   return (
     <>
       <nav>
-        <Link to="/squares">Squares</Link>
+        <Link to="/cubes">Cubes</Link>
+        <br />
         <Link to="/spheres">Spheres</Link>
       </nav>
     </>

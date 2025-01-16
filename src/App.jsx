@@ -17,16 +17,25 @@ const App = () => (
     <Routes>
       <Route path="/" />
       <Route
-        path="/squares"
+        path="/cubes"
         element={
-          <Canvas camera={{ position: [23, 10, 10] }}>
-            <ambientLight intensity={1.2} />
-            <pointLight position={[10, 10, 10]} />
-            <BoxGeometry />
-            <SpinningCube />
-            <InteractiveCube />
-            <OrbitControls />
-          </Canvas>
+          <>
+            <h3>Cubes</h3>
+            <p>
+              Red = Stationary <br />
+              Blue = Rotation <br />
+              Pink = Rotation + Interactive: User can hover mouse to change
+              colour + click to change colour.
+            </p>
+            <Canvas camera={{ position: [23, 10, 10] }}>
+              <ambientLight intensity={1.2} />
+              <pointLight position={[10, 10, 10]} />
+              <BoxGeometry />
+              <SpinningCube />
+              <InteractiveCube />
+              <OrbitControls />
+            </Canvas>
+          </>
         }
       />
       <Route
