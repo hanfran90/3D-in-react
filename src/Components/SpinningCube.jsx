@@ -3,7 +3,6 @@ import { useFrame } from "@react-three/fiber";
 
 const SpinningCube = () => {
   const cubeRef = useRef();
-  console.log(cubeRef);
 
   useFrame(() => {
     if (cubeRef.current) {
@@ -13,7 +12,7 @@ const SpinningCube = () => {
   });
 
   return (
-    <mesh ref={cubeRef} position={[0, 0, 0]}>
+    <mesh ref={cubeRef} position={[10, 0, 0]}>
       <boxGeometry args={[5, 5, 5]} />
       <meshStandardMaterial color="blue" />
     </mesh>

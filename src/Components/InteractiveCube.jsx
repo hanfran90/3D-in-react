@@ -19,7 +19,7 @@ const InteractiveCube = () => {
   return (
     <mesh
       ref={cubeRef}
-      position={[9, 0, 0]}
+      position={[-10, 0, 0]}
       onPointerOver={handlePointerOver}
       onPointerOut={handlePointerOut}
       onClick={handleClick}
